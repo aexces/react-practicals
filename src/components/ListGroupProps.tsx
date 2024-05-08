@@ -11,9 +11,23 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
 
   return (
     <>
-      <h1>{heading}</h1>
+      <h1
+        style={{
+          flex: 1,
+          marginLeft: 10,
+        }}
+      >
+        {heading}
+      </h1>
       {items.length === 0 && <p>No Items</p>}
-      <ul className="list-group">
+      <ul
+        className="list-group"
+        style={{
+          flex: 1,
+          width: "300px",
+          padding: 8,
+        }}
+      >
         {items.map((item, index) => (
           <li
             key={item}
