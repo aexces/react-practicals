@@ -1,6 +1,6 @@
 import { ThemeState } from "@/application/theme/themeState";
-import { IThemeSettings } from "@/presentation/theme/props/iThemeSettings";
-import { colorTokens } from "@/presentation/theme/colorTokens";
+import { IThemeSettings } from "@/presentation/Theme/Props/iThemeSettings";
+import { colorTokens } from "@/presentation/Theme/colorTokens";
 
 // mui theme settings
 export const themeSettings = (themeState: ThemeState): IThemeSettings => {

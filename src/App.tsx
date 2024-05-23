@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@mui/material";
-import { getTheme } from "./presentation/theme/theme";
+import { getTheme } from "./presentation/Theme/theme";
 
 function App() {
   const theme = getTheme();

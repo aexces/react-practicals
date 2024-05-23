@@ -1,4 +1,4 @@
-import { getColorTokens, getThemeSettings } from "@/presentation/theme/theme";
+import { getColorTokens, getThemeSettings } from "@/presentation/Theme/theme";
 import { Box } from "@mui/material";
 const ErrorPage = () => {
   const themes = getThemeSettings();
