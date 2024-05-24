@@ -6,6 +6,8 @@ const StyledMainFrame = styled(Box)(() => {
   return {
     height: "100vh",
     width: "100vw",
+    display: "flex",
+    position: "relative",
     backgroundColor: themes.palette.background.default,
   };
 });
