@@ -1,0 +1,3 @@
+type SidebarTogglerProps = {
+  onClick?: () => void;
+};

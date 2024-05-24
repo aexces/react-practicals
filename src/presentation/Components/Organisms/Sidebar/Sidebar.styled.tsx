@@ -1,10 +1,12 @@
-import { getColorTokens } from "@/presentation/Theme/theme";
+import { drawerWidth } from "@/presentation/Core/Constants";
 import { Box, styled } from "@mui/material";
 
-const StyledSidebar = styled(Box)(() => {
-  const colors = getColorTokens();
+const StyledSidebar = styled(Box)(({ theme }) => {
   return {
-    backgroundColor: colors.primary[400],
+    [theme.breakpoints.up("sm")]: {
+      width: drawerWidth,
+      flexShrink: 0,
+    },
   };
 });
 
