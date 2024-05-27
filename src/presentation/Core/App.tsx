@@ -1,8 +1,5 @@
-import { ThemeProvider } from "@mui/material";
-import { getTheme } from "@/presentation/themes/theme";
+const App = () => {
+  return <div>Welcome home!</div>;
+};
 
-function App() {
-  const theme = getTheme();
-  return <ThemeProvider theme={theme}></ThemeProvider>;
-}
 export default App;

@@ -1,3 +1,0 @@
-type MainHeaderHeadingProps = {
-  label: string;
-};

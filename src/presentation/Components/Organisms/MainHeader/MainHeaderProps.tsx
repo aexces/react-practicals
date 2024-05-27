@@ -1,3 +1,0 @@
-type MainHeaderProps = {
-  onClick?: () => void;
-};
