@@ -1,12 +1,13 @@
-import VerifyPage from "@/presentation/Pages/Auth/Verify/VerifyPage";
-import ProtectedRoute from "@/presentation/Router/ProtectedRoute";
+import SignInPage from "@/presentation/pages/Auth/SignIn/SignInPage";
+import ErrorPage from "@/presentation/pages/Error/ErrorPage";
+import HomePage from "@/presentation/pages/Home/HomePage";
+import ProtectedRoute from "@/presentation/router/ProtectedRoute";
 import { createBrowserRouter } from "react-router-dom";
-import SignInPage from "../Pages/Auth/SignIn/SignInPage";
-import ErrorPage from "../Pages/Error/ErrorPage";
+import DashboardPage from "@/presentation/pages/Dashboard/DashboardPage";
+import HubsPage from "@/presentation/pages/Hubs/HubsPage";
+import SpacesPage from "@/presentation/pages/Spaces/SpacesPage";
 
-import HomePage from "@/presentation/Pages/Home/HomePage";
-
-export const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "*",
     element: <ErrorPage />,
@@ -15,10 +16,7 @@ export const router = createBrowserRouter([
     path: "/signIn",
     element: <SignInPage />,
   },
-  {
-    path: "/verify",
-    element: <VerifyPage />,
-  },
+
   {
     path: "/",
     element: (
@@ -26,7 +24,21 @@ export const router = createBrowserRouter([
         <HomePage />
       </ProtectedRoute>
     ),
-
+    children: [
+      {
+        path: "/dashboard",
+        element: <DashboardPage />,
+      },
+      {
+        path: "/hubs",
+        element: <HubsPage />,
+      },
+      {
+        path: "/spaces",
+        element: <SpacesPage />,
+      },
+    ],
     errorElement: <ErrorPage />,
   },
 ]);
+export default router;

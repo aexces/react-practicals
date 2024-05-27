@@ -1,4 +1,4 @@
-import { drawerWidth } from "@/presentation/Core/Constants";
+import { drawerWidth } from "@/presentation/core/Constants";
 import { Box, styled } from "@mui/material";
 
 const StyledSidebar = styled(Box)(({ theme }) => {

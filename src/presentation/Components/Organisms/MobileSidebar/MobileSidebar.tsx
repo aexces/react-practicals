@@ -1,5 +1,5 @@
-import StyledMobileSidebar from "@/presentation/Components/Organisms/MobileSidebar/MobileSidebar.styled";
-import SidebarProps from "@/presentation/Components/Organisms/Sidebar/SidebarProps";
+import StyledMobileSidebar from "@/presentation/components/organisms/MobileSidebar/MobileSidebar.styled";
+import SidebarProps from "@/presentation/components/organisms/Sidebar/SidebarProps";
 const MobileSidebar = ({
   window,
   isOpen,

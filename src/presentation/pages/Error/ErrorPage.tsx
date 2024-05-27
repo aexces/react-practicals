@@ -1,8 +1,11 @@
-import { getColorTokens, getThemeSettings } from "@/presentation/Theme/theme";
+import Button from "@/presentation/components/atoms/Button/Button";
+import { getColorTokens, getThemeSettings } from "@/presentation/themes/theme";
 import { Box } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 const ErrorPage = () => {
   const themes = getThemeSettings();
   const colors = getColorTokens();
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -17,7 +20,11 @@ const ErrorPage = () => {
         color: colors.grey[100],
       }}
     >
-      <h1>Access Restricted</h1>
+      <h1>Not Found</h1>
+      <Button
+        label="Back to Login"
+        onClick={() => navigate("/", { replace: true })}
+      ></Button>
     </Box>
   );
 };

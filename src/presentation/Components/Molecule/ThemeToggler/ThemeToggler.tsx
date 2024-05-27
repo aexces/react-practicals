@@ -1,9 +1,9 @@
-import { getStateTheme } from "@/presentation/Theme/theme";
+import { getStateTheme } from "@/presentation/themes/theme";
 import { LightModeOutlined } from "@mui/icons-material";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/application/state";
 import { switchTheme } from "@/application/theme/themeSlice";
-import DarkModeOutlinedIcon from "@/presentation/Components/Atom/DarkModeOutlinedIcon/DarkModeOutlinedIcon";
+import DarkModeOutlinedIcon from "@/presentation/components/atoms/DarkModeOutlinedIcon/DarkModeOutlinedIcon";
 import IconButton from "@mui/material/IconButton/IconButton";
 
 const ThemeToggler = () => {

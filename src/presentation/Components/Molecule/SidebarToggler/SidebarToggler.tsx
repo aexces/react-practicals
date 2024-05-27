@@ -1,5 +1,5 @@
-import { Menu } from "@mui/icons-material";
-import StyledSidebarToggler from "@/presentation/Components/Molecule/SidebarToggler/SidebarToggler.styled";
+import StyledSidebarToggler from "@/presentation/components/molecule/SidebarToggler/SidebarToggler.styled";
+import MenuButton from "@/presentation/components/atoms/MenuButton/MenuButton";
 
 const SidebarToggler = ({ onClick }: SidebarTogglerProps) => {
   return (
@@ -10,7 +10,7 @@ const SidebarToggler = ({ onClick }: SidebarTogglerProps) => {
       aria-label="open drawer"
       onClick={onClick}
     >
-      <Menu />
+      <MenuButton />
     </StyledSidebarToggler>
   );
 };
