@@ -1,5 +1,13 @@
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { getTheme } from "../theme/theme";
+
 const App = () => {
-  return <div></div>;
+  const theme = getTheme();
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+    </ThemeProvider>
+  );
 };
 
 export default App;
