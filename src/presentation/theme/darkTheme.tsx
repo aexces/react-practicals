@@ -1,5 +1,7 @@
 import createTheme from "@mui/material/styles/createTheme";
-import { DarkBackgroundDefaultColor, DarkBackgroundPaperColor } from "./colors";
+import { DarkBackgroundDefaultColor } from "./colors";
+import { DarkBackgroundPaperColor } from "./colors";
+import { DarkPrimaryColor } from "./colors";
 
 const darkTheme = createTheme({
   palette: {
@@ -7,6 +9,12 @@ const darkTheme = createTheme({
     background: {
       default: DarkBackgroundDefaultColor,
       paper: DarkBackgroundPaperColor,
+    },
+    primary: {
+      main: DarkPrimaryColor,
+    },
+    secondary: {
+      main: DarkPrimaryColor,
     },
   },
 });

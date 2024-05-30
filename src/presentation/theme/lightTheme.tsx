@@ -1,8 +1,7 @@
 import createTheme from "@mui/material/styles/createTheme";
-import {
-  LightBackgroundDefaultColor,
-  LightBackgroundPaperColor,
-} from "./colors";
+import { LightBackgroundDefaultColor } from "./colors";
+import { LightBackgroundPaperColor } from "./colors";
+import { LightPrimaryColor } from "./colors";
 
 const lightTheme = createTheme({
   palette: {
@@ -10,6 +9,12 @@ const lightTheme = createTheme({
     background: {
       default: LightBackgroundDefaultColor,
       paper: LightBackgroundPaperColor,
+    },
+    primary: {
+      main: LightPrimaryColor,
+    },
+    secondary: {
+      main: LightPrimaryColor,
     },
   },
 });

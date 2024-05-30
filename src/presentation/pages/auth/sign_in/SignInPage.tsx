@@ -20,10 +20,22 @@ const SignInPage = () => {
       <IconButton color="inherit" onClick={() => dispatch(switchTheme())}>
         {isDark ? <DarkModeOutlined /> : <LightModeOutlined />}
       </IconButton>
-      <Button color="primary" variant="contained">
+      <Button
+        sx={{
+          margin: theme.spacing(1),
+        }}
+        color="primary"
+        variant="contained"
+      >
         Submit
       </Button>
-      <Button color="secondary" variant="outlined">
+      <Button
+        sx={{
+          margin: theme.spacing(1),
+        }}
+        color="primary"
+        variant="outlined"
+      >
         Submit
       </Button>
     </Box>
