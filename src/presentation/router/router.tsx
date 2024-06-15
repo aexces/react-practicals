@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import SignInPage from "../pages/auth/sign_in/SignInPage";
+import HomePage from "../pages/Home/HomePage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <SignInPage />,
+    element: <HomePage />,
   },
 ]);
 export default router;
